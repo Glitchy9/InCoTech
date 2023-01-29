@@ -172,14 +172,4 @@ header .media-icons{
 .media-icons a:hover{
  opacity: 1;
 }
-.form{
-    width: 350px;
-    height: 270px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 250px;
-    left: 870px;
-    transform: translate(0%,-5%);
-    border-radius: 10px;
-    padding: 25px;
-}
+
