@@ -30,8 +30,8 @@ header nav{
   justify-content: space-between;
 }
   header nav .logo{
-  height: 80px;
-  width: 150px;
+  height: 100px;
+  width: 200px;
 }
 .logo img{
   height: 100%;
