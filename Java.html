@@ -1,0 +1,514 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JAVA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="style1.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<style>
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+    margin: 0;
+}
+
+/* Style the body */
+body{
+    height: 100vh;
+    background-color: #05122D;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 5vw;
+    margin: 0.5em 0;
+  }
+  p{
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2em;
+    text-align: justify;
+    padding: 0 1.4em;
+    letter-spacing: 0.02em;
+  }
+h2 {
+font-size: 20px
+color white;
+}
+
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+    background-image: url("periwinkle.jpg");
+  background-color: #cccccc;
+   background-repeat: no-repeat;
+   background-size: cover;
+  color: black;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 20px;
+  color: white;
+}
+
+/* Style the top navigation bar */
+
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #05122D;
+  padding: 50px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: clear;
+  width: 27%;
+  padding: 20px;
+  float:left;
+
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  background: #140B5C;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+footer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background: #AFAFB6;
+}
+footer .content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.content .top .logo-details{
+  color: #fff;
+  font-size: 30px;
+}
+.content .top .media-icons{
+  display: flex;
+}
+.content .top .media-icons a{
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top .media-icons a:nth-child(1){
+  background: #4267B2;
+}
+.top .media-icons a:nth-child(1):hover{
+  color: #4267B2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(2){
+  background: #1DA1F2;
+}
+.top .media-icons a:nth-child(2):hover{
+  color: #1DA1F2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(3){
+  background: #E1306C;
+}
+.top .media-icons a:nth-child(3):hover{
+  color: #E1306C;
+  background: #fff;
+}
+.top .media-icons a:nth-child(4){
+  background: #0077B5;
+}
+.top .media-icons a:nth-child(4):hover{
+  color: #0077B5;
+  background: #fff;
+}
+.top .media-icons a:nth-child(5){
+  background: #FF0000;
+}
+.top .media-icons a:nth-child(5):hover{
+  color: #FF0000;
+  background: #fff;
+}
+footer .content .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .link-boxes .box{
+  width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+.link-boxes .box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.content .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+.content .link-boxes .box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box{
+  margin-right: 55px;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #140B5C;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+  color: #AFAFB6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"]{
+  background: #fff;
+  color: #140B5C;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover{
+  opacity: 1;
+}
+footer .bottom-details{
+  width: 100%;
+  background: black;
+}
+footer .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+.sub-div {
+    max-height: 100vh;
+    overflow-y: scroll;
+    /*Thumb color and background color for firefox */
+    scrollbar-color: #00c6ff #242942;
+    overflow-x: none;
+  }
+  /*  ::-webkit- is for chrome */
+  ::-webkit-scrollbar {
+    width: 1.2em;
+    overflow-x: none;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #242942;
+    margin-block: 0.25em;
+    border-radius: 0.3em;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to right, #00c6ff, #0072ff);
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border-radius: 0.3em;
+  }
+@media (max-width: 900px) {
+  footer .content .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  .content .top .logo-details{
+    font-size: 26px;
+  }
+  .content .top .media-icons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px){
+  footer::before{
+    top: 145px;
+  }
+  footer .content .top{
+    flex-direction: column;
+  }
+  .content .top .media-icons{
+    margin-top: 16px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 2 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <img class="logo-img" src="images/incotechlogo.png" width="80" height="60" ALT="align box" ALIGN=CENTER>
+        <a href="#home" class="active"><i class="fa fa-fw fa-home"></i></a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">PHP 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="phphis.html">History</a>
+            <a href="phptot.html">Tutorials</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">JAVA 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="javahis.html">History</a>
+            <a href="javatot.html">Tutorials</a>
+            
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">C++
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="chis.html">History</a>
+            <a href="ctot.html">Tutorials</a>
+           
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">HTML 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="htmlhis.html">History</a>
+            <a href="htmltot.html">Tutorials</a>
+         
+          </div>
+        </div>  
+        </div> 
+        
+      </div>
+      
+    
+
+  <div class="main">
+    <h1>What is JAVA</h1>
+    
+    <div class="fakeimg" style="height:250px;"><img src="images/java-logo.png"  width="250" 
+     height="200" />
+    </div>
+
+    <p>Definition..</p>
+    <p>Java is a high-level, object-oriented programming language that is designed to be portable and platform-independent. It was first released in 1995 by Sun Microsystems (now owned by Oracle Corporation) and has since become one of the most widely used programming languages in the world.
+</p>
+
+<p>Java is known for its simplicity, reliability, and security. It uses a syntax that is similar to other programming languages such as C++ and C#, but with a simpler and more streamlined approach. One of the key features of Java is its ability to run on multiple platforms without requiring any changes to the code.</p>
+
+<p>In Java, variables are used to store data, and there are several different data types available. One of these data types is long, which is used to represent whole numbers (integers) that may be very large, up to 64 bits in size. A long variable can hold values ranging from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.</p>
+
+<center>
+                 <video width="500" height="350" controls autoplay>
+  <source src="images/code.mp4" type="video/mp4">
+  <source src="images/code.mp4" type="video/ogg">
+  
+</video>
+</center>
+    
+    
+    
+  
+    <p>Java also supports a wide range of programming concepts, including inheritance, encapsulation, polymorphism, and abstraction. These concepts allow developers to write code that is more modular, reusable, and maintainable.</p>
+    <p>In addition, Java comes with a vast library of built-in classes and methods that make it easier to perform common programming tasks. This makes Java a popular choice for building applications ranging from desktop software to web applications and mobile apps</p>
+
+	<p>Overall, Java is a powerful and versatile programming language that is used by millions of developers around the world. Its simplicity, reliability, and portability make it an excellent choice for a wide range of programming tasks.
+  </p>
+
+  </div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+  
+<footer>
+      
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="research.php">InCoTech.</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
