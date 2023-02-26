@@ -12,7 +12,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-image: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('images/classmate1.jpg');
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('classmate1.jpg');
     background-position: center;
     background-size: cover;
     height: 100vh;
