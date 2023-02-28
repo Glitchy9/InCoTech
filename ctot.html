@@ -564,14 +564,161 @@ As you become more comfortable with C++, you can start exploring the language's 
         
       
       <p>With these steps, you should have a good starting point for learning C++ as a beginner. Remember that learning any programming language takes time and practice, so don't be discouraged if you don't understand everything right away. Keep practicing and experimenting with different concepts until you become more comfortable with the language.</p>
-    <center><h2>here some videos will help you</h2></center>
-    <center>
-                     <video width="500" height="350" controls autoplay>
-      <source src="code.mp4" type="video/mp4">
-      <source src="code.ogg" type="video/ogg">
+      <p>
+        It is written as:
+        <br>
+      #include <iostream>
+      </br>
+      </p>
+      <br>
+      <p>
+        The hash sign (#) signifies the start of a preprocessor command. The #include command is a specific preprocessor command that effectively copies and pastes the entire text of the file specified between the angle brackets into the source code. In this case, the file is “iostream” which is a standard file that should come with the C++ compiler. This file name is short for “input-output streams”; in short, it contains code for displaying and getting the text from the user.
       
-    </video>
-    </center>
+      </p>
+      <br>
+      <p>
+        The include statement allows a programmer to “include” this functionality in the program without having to literally cut and paste it into the source code every time. The iostream file is part of the C++ standard library, which provides a set of useful and commonly used functionality provided with the compiler. The “include” mechanism, however, can be used both for standard code provided by the compiler and for reusable files created by the programmer.
+      
+      </p>
+      <br>
+      <p style="color: red;">using namespace std</p>
+      <br>
+      <p>
+        It is written as:
+      Using namespace std;
+      
+      </p>
+      <br>
+      <p>
+        C++ supports the concept of namespaces. A namespace is essentially a prefix that is applied to all the names in a certain set. One way to think about namespaces is that they are like toolboxes with different useful tools. The using command tells the compiler to allow all the names in the “std” namespace to be usable without their prefix. The iostream file defines three names used in this program – cout, cin, and endl – which are all defined in the std namespace. “std” is short for “standard” since these names are defined in the standard C++ library that comes with the compiler.
+       
+      </p>
+      <br>
+      <p>Without using the std namespace, the names would have to include the prefix and be written as std::cout, std::cin, and std::endl. If we continue with the toolbox example, this code would be saying, “Use the cout, cin and endl tools from the std toolbox.”
+      </p>
+      <br>
+      <p>
+        NOTE:You should either remember the fact that the iostream file uses the std namespace​ or look it up in the documentation for the iostream file because C++ does not make this connection for you explicitly.
+      
+      </p>
+      <br>
+      <p style="color: red;"></p>
+      <br>
+      <p>Int main is called as:
+      </p>
+      <br>
+      <p>Int main() { }
+      </p>
+      <br>
+      <p>The starting point of all C++ programs is the main function. This function is called by the operating system when your program is executed by the computer.
+      </p>
+      <br>
+      <p>
+        By execution we mean: Performing the actions specified by the statements in your program.
+      
+      </p>
+      <br>
+      <p style="color: red;">cin & cout
+      </p>
+      <br>
+      <p>Example:</p>
+       <p> cout &lt;&lt; “Hello, World!” &lt;&lt; endl;
+        </p>
+        <p>The name cout is short for “character output” and cin, correspondingly, is an abbreviation for “character input”.</p>
+      <p>In a typical C++ program, most function calls are of the form object.function_name(argument1, argument2).</p>
+      <p>Symbols such as << can also behave like functions, as illustrated by the use of cout above. This capability is called operator overloading.</p>
+      <p>A block of code is defined with the { } tokens. { signifies the start of a block of code, and } signifies the end.
+      NOTE: The { } tokens have other uses as well.</p>
+      <p>Statements in C++ must be terminated with a semicolon,
+      •Just as sentences in English must be terminated with a period.
+      •Just as sentences in English can span several lines, so can the statements in C++.
+      In fact, you can use as many spaces and new lines between the words of a C++ program as you wish to beautify your code just as spaces are used to justify the text printed on the pages of a book</p>
+      <p>The return statement is written as:
+      Return 0 : // (any type can return depending on function type)
+      The return keyword tells the program to return a value to the function int main that called this function and then to continue execution in the int main function from the point at which this function was called.
+      Note: The type of the value returned by a function must match the type specified in the declaration of the function.
+      Executing the return keyword in the main function of a program returns a value and the execution control to the operating system component that launched this program, in effect, terminating the execution of this program.</p>
+      <p>Constants can be of any of the basic data types and can be divided into Integer Numerals, Floating-Point Numerals, Characters, Strings and Boolean Values.
+      Again, constants are treated just like regular variables except that their values cannot be modified after their definition.</p>
+      <p>Integer Literals
+      An integer literal can be a decimal, octal, or hexadecimal constant. A prefix specifies the base or radix: 0x or 0X for hexadecimal, 0 for octal, and nothing for decimal.
+      An integer literal can also have a suffix that is a combination of U and L, for unsigned and long, respectively. The suffix can be uppercase or lowercase and can be in any order.
+      Here are some examples of integer literals –
+      212 // Legal
+      215u // Legal
+      0xFeeL // Legal
+      078 // Illegal: 8 is not an octal digit
+      032UU // Illegal: cannot repeat a suffix</p>
+      
+      <p>Floating Point Literals
+      A floating-point literal has an integer part, a decimal point, a fractional part, and an exponent part. You can represent floating point literals either in decimal form or exponential form.
+      While representing using decimal form, you must include the decimal point, the exponent, or both and while representing using exponential form, you must include the integer part, the fractional part, or both. The signed exponent is introduced by e or E.</p>
+      <p>Boolean Literals
+      There are two Boolean literals and they are part of standard C++ keywords –
+      •A value of true representing true.
+      •A value of false representing false.
+      You should not consider the value of true equal to 1 and value of false equal to 0.</p>
+      <p>Character Literals
+      Character literals are enclosed in single quotes. If the literal begins with L (uppercase only), it is a wide character literal (e.g., L’x’) and should be stored in wchar_t type of variable . Otherwise, it is a narrow haracter literal (e.g., ‘x’) and can be stored in a simple variable of char type. </p>
+      <p>A character literal can be a plain character (e.g., ‘x’), an escape sequence (e.g., ‘\t’), or a universal character (e.g., ‘\u02C0’).</p>
+      <p>There are certain characters in C++ when they are preceded by a backslash they will have special meaning and they are used to represent like newline (\n) or tab (\t). Here, you have a list of some of such escape sequence codes:</p>
+      <p>STRING LITERALS</p>
+      <p>String literals are enclosed in double quotes. A string contains characters that are similar to character literals: plain characters, escape sequences, and universal characters.</p>
+      <p>You can break a long line into multiple lines using string literals and separate them using whitespaces.</p>
+      <p>Here are some examples of string literals. All the three forms are identical strings.</p>
+      <p>“hello, dear”</p>
+      <p>“hello, \</br> Dear”</p>
+      <p>“hello, “ “d” “ear”</p>
+      <p>DEFINING CONSTANT</p>
+      <p>There are two simple ways in C++ to define constants:</p>
+      <p>Using #define preprocessor.</p>
+      <p>Using const keyword.</p>
+      <p>The #define Preprocessor</p>
+      <p>Following is the form to use #define preprocessor to define a constant –</p>
+      <p>#define identifier value</p>
+      <p>Following example explains it in detail –</p>
+      <pre>
+      #include &lt;iostream&gt;
+      Using namespace std;
+      
+      #define LENGTH 10   
+      #define WIDTH  5
+      #define NEWLINE ‘\n’
+      
+      Int main() {
+         Int area;  
+         
+         Area = LENGTH * WIDTH;
+         Cout << area;
+         Cout << NEWLINE;
+         Return 0;
+      }
+      </pre>
+      <p>When the above code is compiled and executed, it produces the following result –</p>
+      <p>50</p>
+      <p>The const Keyword</p>
+      <p>You can use const prefix to declare constants with a specific type as follows –</p>
+      <p>Const type variable = value;</p>
+      <p>Following example explains it in detail –</p>
+      <pre>
+      #include &lt;iostream&gt;
+      Using namespace std;
+      
+      Int main() {
+         Const int  LENGTH = 10;
+         Const int  WIDTH  = 5;
+         Const char NEWLINE = ‘\n’;
+         Int area;  
+         
+         Area = LENGTH * WIDTH;
+         Cout << area;
+         Cout << NEWLINE;
+         Return 0;
+      }
+      </pre>
+      <p>When the above code is compiled and executed, it produces the following result –</p>
+      <p>50</p>
+      <p>Note that it is a good programming practice to define constants in CAPITALS.</p>
         
         
         
