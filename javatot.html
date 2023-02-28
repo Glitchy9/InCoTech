@@ -424,7 +424,8 @@ footer .bottom-details .bottom_text{
 <body>
 
     <div class="topnav" id="myTopnav">
-      <img class="logo-img" src="images/incotech logo (2).png" width="60" height="70" ALT="align box" ALIGN=CENTER>
+        <img class="logo-img" src="images/incotech logo (2).png" width="70" height="50" ALT="align box" ALIGN=CENTER>
+
         <a href="#home" class="active"><i class="fa fa-fw fa-home"></i></a>
         <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
         <div class="dropdown">
@@ -606,15 +607,243 @@ footer .bottom-details .bottom_text{
           </pre>
         </div>
       </div>
+      <ol class="s">
+        <li><h2>Data types and variables
+        </h2>
+          <p>To declare a variable in Java, you need to specify the data type and the variable name. </p></li>
+        
+      </ol>
+      <div id="container">
+        <div class="blue">
+          
+          <pre>
+              <code>
+                <p>/*
+                  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+                  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+                  */
+                 package datatypesandvariables;
+                 
+                 
+                 import java.util.Scanner;
+                 import java.util.Arrays;
+                 
+                 
+                 /**
+                  *
+                  * @author CCReg
+                  */
+                 public class DatatypesAndVariables {
+                 
+                 
+                     /**
+                      * @param args the command line arguments
+                      */
+                     public static void main(String[] args) {
+                         // TODO code application logic here
+                         Scanner input = new Scanner(System.in);
+                         //System.out.print("Enter your name : ");
+                         //String name = input.nextLine(); 
+                         
+                         //System.out.print("Enter your age : ");
+                         //int age = input.nextInt();
+                         
+                         //System.out.println("My name is " + name + " and I am " + age + " years old!");
+                         
+                         //Adding two numbers
+                         //System.out.print("Enter 1st number : ");
+                         //float num1 = (float) input.nextDouble();
+                         //System.out.print("Enter 2nd number : ");
+                         //float num2 = (float) input.nextDouble();
+                         
+                         //float res = num1+num2;
+                         //System.out.println("The sum is : " + res);
+                         
+                         //String fname = "Rodel";
+                         //String lname = "Torrecampo";
+                         
+                         //String fullname = fname + lname;
+                         
+                         //System.out.println(fullname);
+                         
+                         System.out.print("Enter employee name : ");
+                         String employee = input.nextLine();
+                         
+                         System.out.print("Enter hours of worked : ");
+                         double hrs = input.nextDouble();
+                         
+                         System.out.print("Enter hourly pay rate : ");
+                         double payRate = input.nextDouble();
+                         
+                         double gross = hrs * payRate;
+                         
+                         System.out.print("Enter tax deductions (PAG-IBIG) : ");
+                         double tax_pg = input.nextDouble();
+                         double tax_deduct = tax_pg * 0.20;
+                         
+                         System.out.print("Enter tax deductions (SSS) : ");
+                         double tax_sss = input.nextDouble();
+                         double tax_deduct1 = tax_sss * 0.20;
+                         
+                         double deductions = tax_deduct + tax_deduct1;
+                         
+                         double totalPayRate = gross - deductions;
+                         
+                         System.out.println("Employee : " + employee);
+                         System.out.println("Hours worked : " + hrs + " hours");
+                         System.out.println("Pay Rate (p/hr) : " + payRate + " Php");
+                         System.out.println("PAG-IBIG Deductions : " + tax_deduct);
+                         System.out.println("SSS Deductions : " + tax_deduct1);
+                         System.out.println("TOTAL DEDUCTIONS : " + deductions);
+                         System.out.println("");
+                         System.out.println("YOUR TOTAL SALARY IS : " + totalPayRate);
+                         
+                     }
+                 }
+                 
+                 
+                
+                
+              </p>
+              </code>
+          </pre>
+        </div>
+      </div>
+      <ol class="s">
+        <li><h2>Java application
+        </h2>
+         
+        
+      </ol>
+      <div id="container">
+        <div class="blue">
+          
+          <pre>
+              <code>
+                <p>/*
+                  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+                  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+                  */
+                 package javaapplication2;
+                 
+                 
+                 /**
+                  *
+                  * @author CCReg
+                  */
+                 public class JavaApplication2 {
+                 
+                 
+                     /**
+                      * @param args the command line arguments
+                      */
+                     public static void main(String[] args) {
+                         System.out.println("Hello World!");
+                     System.out.println("This is my first java program!");
+                 
+                 
+                     int a = 5;
+                     int b = 10;
+                     
+                     int c = a + b;
+                     
+                     System.out.println();
+                     System.out.println("The first is " + a + " The second number is " + b);
+                 
+                 
+                     System.out.println("The sum is : " + c);
+                     }
+                     
+                 }
+                 
+                 
+                
+                
+              </p>
+              </code>
+          </pre>
+        </div>
+      </div>
+      <ol class="s">
+        <li><h2>Java array
+        </h2>
+          </li>
+        
+      </ol>
+      <div id="container">
+        <div class="blue">
+          
+          <pre>
+              <code>
+                <p>/*
+                  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+                  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+                  */
+                 package javaarray;
+                 
+                 
+                 import java.util.Scanner;
+                 
+                 
+                 /**
+                  *
+                  * @author CCReg
+                  */
+                 public class JavaArray {
+                 
+                 
+                     /**
+                      * @param args the command line arguments
+                      */
+                     public static void main(String[] args) {
+                         // TODO code application logic here
+                         //String cars[]={"Volvo", "Toyota", "Mitsubishi", "Ford"};
+                         //System.out.println(cars[3]);
+                         
+                         //int[][] myNumbers = {{1,2,3,4}, {5,6,8}};
+                         //System.out.println(myNumbers[1][2]);
+                         
+                         //int arr[][] = {{1,2,3},{2,4,5},{4,4,5}};
+                         //for(int i = 0; i<3; i++){
+                             //for(int a = 0; a < 3; a++){
+                                 //System.out.print(arr[i][a] + " ");
+                             //}
+                             //System.out.println();
+                         //}
+                         int gMarks[] = new int[6];
+                         int a;
+                         float total = 0, avg;
+                         Scanner sc = new Scanner(System.in);
+                         
+                         for(a = 0; a < 6; a++){
+                             System.out.print("Enter grade per Subject " + (a+1)+" : ");
+                             gMarks[a] = sc.nextInt();
+                             total = total + gMarks[a];
+                         }
+                         sc.close();
+                         avg = total/6;
+                         System.out.println("The student grade is : " + avg);
+                         
+                         if(avg >=75){
+                             System.out.println("Satisfactory! Passed!");
+                         }
+                         else{
+                             System.out.println("Better Luck Next Time! Failed!");
+                         }
+                         
+                     }
+                     
+                 }
+                 
+                
+                
+              </p>
+              </code>
+          </pre>
+        </div>
+      </div>
       <p>These are just a few basic examples to get you started. As you continue to learn Java, you will become more familiar with these concepts and start to build more complex programs. Good luck!</p>
-    <center><h2>here some videos will help you</h2></center>
-    <center>
-                     <video width="500" height="350" controls autoplay>
-      <source src="code.mp4" type="video/mp4">
-      <source src="code.ogg" type="video/ogg">
-      
-    </video>
-    </center>
+    
         
         
         
